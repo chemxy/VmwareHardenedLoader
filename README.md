@@ -7,17 +7,34 @@ It get VMware guest undetected by VMProtect 3.2, Safengine and Themida (anti-vm 
 
 ## What it does
 
-The VmLoader driver patches SystemFirmwareTable at runtime, it removes all detectable signatures like "VMware" "Virtual" "VMWARE".
+在虚拟机里开冒险岛
 
-## Build
+## System Requirements
 
-Visual Studio 2015 / 2017 and [Windows Driver Kit 10](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/download-the-wdk) are required.
+Windows 10 OS
 
-Open VmLoader.sln with Visual Studio 2015 / 2017
+VMWare Workstation 16
 
 Build VmLoader as x64/Release. (No x86 support for now)
 
 Remember to test-sign "bin/vmloader.sys" if you want to load it in test-sign mode.
+
+# Before
+
+## 虚拟机註冊表修改 nvidia
+
+
+
+（1）win+r 输入 regedit 打开注册表
+
+
+
+虚拟机注册表修改位置：
+（2）ctrl+f 打开查找 输入：
+{4D36E968-E325-11CE-BFC1-08002BE10318}
+找到0000
+
+找到‘vmare’ 开头值 ，请全部修改成 ‘Nvidia’ 
 
 # Installation
 
