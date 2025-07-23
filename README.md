@@ -32,6 +32,11 @@ Remember to test-sign "bin/vmloader.sys" if you want to load it in test-sign mod
 虚拟机注册表修改位置：
 （2）ctrl+f 打开查找 输入：
 {4D36E968-E325-11CE-BFC1-08002BE10318}
+
+or
+
+计算机\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000
+
 找到0000
 
 找到‘vmare’ 开头值 ，请全部修改成 ‘Nvidia’ 
